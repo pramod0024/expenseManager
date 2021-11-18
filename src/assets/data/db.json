@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "item": "Pizza",
+      "amount": 300,
+      "category": "Food",
+      "location": "KFC",
+      "spendOn": "5/22/2021",
+      "createdOn": "5/22/2021"
+    },
+    {
+      "id": 3,
+      "item": "Pizza",
+      "amount": 350,
+      "category": "Food",
+      "location": "KFC",
+      "spendOn": "5/10/2021",
+      "createdOn": "5/10/2021"
+    },
+    {
+      "id": 4,
+      "item": "Pizza item",
+      "amount": "150",
+      "category": "Electronic Item",
+      "location": "Pune",
+      "spendOn": "4/13/2021",
+      "createdOn": "2020-06-19T18:30:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Polo Tshirt"
+    },
+    {
+      "id": 2,
+      "name": "Soccer Tshirt"
+    },
+    {
+      "id": 3,
+      "name": "Casual Tshirt"
+    },
+    {
+      "id": 4,
+      "name": "Shirts"
+    },
+    {
+      "id": 5,
+      "name": "Shooes"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

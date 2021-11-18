@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="container">
+                <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)" class="form" novalidate>
+                    <div class="form-group">
+                        <label for="item">Item</label>
+                        <input type="hidden" class="form-control" id="id"  formControlName="id">
+                        <input type="text" class="form-control" id="item"  formControlName="item">
+                        <div *ngIf="!itemValue?.valid && (itemValue?.dirty || itemValue?.touched)">
+                            <div [hidden]="!itemValue.errors.required">
+                                Item is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" formControlName="amount" class="form-control">
+                        <div *ngIf="!amountValue?.valid && (amountValue?.dirty || amountValue?.touched)">
+                            <div [hidden]="amountValue.errors.required">
+                                Amount is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select name="" id="category" class="form-control" formControlName="category" >
+                            <option>Food</option>
+                            <option>Vegetables</option>
+                            <option>Fruit</option>
+                            <option>Electronic Item</option>                      
+                            <option>Bill</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">location</label>
+                        <input type="text" id="location" class="form-control" formControlName="location">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="spendOn">SpendOn</label>
+                        <input type="text" id="spendOn" class="form-control" formControlName="spendOn">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit" [disabled]="!formData.valid">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
